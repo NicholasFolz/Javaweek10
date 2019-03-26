@@ -51,7 +51,13 @@
   {
     "name": "SuperMom",
     "calories": "Only if she counts them",
-    
+    "type": "sorbet",
+    "ingredients":[
+      "wine",
+      "sugar",
+      "peaches",
+    ],
+    "image": "ice-cream-xtra2.svg"
   },
   ]
 }

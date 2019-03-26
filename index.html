@@ -33,7 +33,7 @@
 			//populate header
 			populateHeader(iScreamInc);
 			//show top topFlavors
-
+			showTopFlavors(iScreamInc);
 		}
 		/* STEP 9: Build out the populateHeader() function */
 		function populateHeader(jsonObj){
@@ -57,8 +57,8 @@
 				h2.textContent = topFlavors[i].name;
 				img.setAttribute('src', 'images/' + topFlavors[i].image);
 				// STEP 10f: Build a loop for the ingredients array in the JSON
-				article.appendChild('h2');
-				article.appendChild('img');
+				article.appendChild(h2);
+				article.appendChild(img);
 				section.appendChild(article);
 				// STEP 10g: Append each of the above HTML elements to the ARTICLE element
 

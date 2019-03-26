@@ -15,9 +15,9 @@
 	<script>
 		/* STEP 2: Bind the HEADER and the SECTION elements above to variables */
 		var header = document.querySelector('header');
-		var section = document.querySelector('section';)
+		var section = document.querySelector('section');
 		/* STEP 3: Store the URL of a JSON file in a variable */
-		var requestURL = 'https://smccrindle.github.io/comp1073/js/i-scream.json'
+		var requestURL = 'js/i-scream.json'
 		/* STEP 4: Create a new XHR object */
 		var request = new XMLHttRequest();
 		/* STEP 5: Open a new request using the request() method */
@@ -30,9 +30,16 @@
 		request.onload = function(){
 			var iScreamInc = request.responce;
 			console.log(iScreamInc);
+			populateHeader(iscreamInc);
 		}
 		/* STEP 9: Build out the populateHeader() function */
-
+		function populateHeader(jsonObj){
+			//creat h1
+			var header1 = document.creatElement('h1');
+			//set textContent
+			header1.textContent = jsonObj['companyName'];
+			header.appendchild(header1);
+		}
 		/* STEP 10a: Assemble the showTopFlavors() function */
 
 			// STEP 10b: Bind the JSON topFlavors object to a var

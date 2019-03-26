@@ -36,6 +36,22 @@
         "candy sprinkles"
       ],
       "image": "strawberry-sprinkle.svg"
-    }
+    },
+  {
+    "name": "SuperDad",
+    "calories": "all of them",
+    "type": "frozen yogurt",
+    "ingredients": [
+      "sarcasim",
+      "whiskey",
+      "hate for stupid people",
+    ],
+    "image": "ice-cream-xtra1.svg"
+  },
+  {
+    "name": "SuperMom",
+    "calories": "Only if she counts them",
+    
+  },
   ]
 }
